@@ -1,0 +1,79 @@
+.personal-website {
+  background-color: azure;
+}
+
+.navbar {
+  height: 50px;
+}
+
+.head {
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  height: 700px;
+  margin-bottom: 40px;
+}
+.headText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  font-weight: 800;
+}
+.headAnimation {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+.headAnimation {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.about {
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+​ .selector-for-some-widget {
+  box-sizing: content-box;
+}
