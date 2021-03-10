@@ -107,7 +107,10 @@ function About() {
       </div>
       <div className="aboutText">
         <h1>About Myself</h1>
-        <br></br>
+        <img
+          className="line"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Line_segment.svg/375px-Line_segment.svg.png"
+        ></img>
         <p>My Name is Daren Nathaniel Janto</p>
       </div>
     </div>
