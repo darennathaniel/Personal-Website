@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import logo from "./logo.svg";
+import Button from "@material-ui/core/Button";
+import Container from "@material-ui/core/Container";
 
 function App() {
   return (
@@ -23,6 +25,10 @@ function App() {
           href="https://fonts.googleapis.com/css?family=Quicksand:300,500"
           rel="stylesheet"
         ></link>
+        <link
+          rel="stylesheet"
+          href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
+        ></link>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -32,21 +38,25 @@ function App() {
           <nav
             className="nav"
             id="navbar"
-            class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+            class="navbar navbar-expand-lg bg-dark fixed-top"
           >
             <div className="nav-content">
               <img src={logo} className="nav-logo" alt="Logo." />
-              <ul className="nav-items" class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
-                <li>
-                  <Link to="/project">Project</Link>
-                </li>
-              </ul>
+              <Link className="links" to="/">
+                <Button variant="outlined" color="primary">
+                  Home
+                </Button>
+              </Link>
+              <Link className="links" to="/about">
+                <Button variant="outlined" color="primary">
+                  About
+                </Button>
+              </Link>
+              <Link className="links" to="/project">
+                <Button variant="outlined" color="primary">
+                  Project
+                </Button>
+              </Link>
             </div>
           </nav>
           <Switch>
@@ -61,6 +71,7 @@ function App() {
             </Route>
           </Switch>
         </Router>
+        <Footer></Footer>
       </div>
     </>
   );
@@ -88,19 +99,16 @@ function Home() {
 function About() {
   return (
     <div className="about" id="about">
-      <div className="aboutTitle">
-        <h1>About Myself</h1>
+      <div className="aboutImage">
+        <img
+          className="IDphoto"
+          src="https://media-exp1.licdn.com/dms/image/C5603AQGShhMlaO38bQ/profile-displayphoto-shrink_800_800/0/1612451344342?e=1620864000&v=beta&t=TNtnKbnceUJgZk9D56hOs7eWQHzc8u2RVcyASOXXq5I"
+        ></img>
       </div>
-      <div>
-        <p>
-          Pelajar Indonesia NTU (PINTU) is an association for Indonesian
-          students in Nanyang Technological University (NTU) Singapore. It was
-          officially founded on 17 August 2002 and has now become one of the
-          most established Indonesian students’ organization in Singapore. We
-          contribute to the livelihood of students in NTU, both Indonesians and
-          non-Indonesians, by organising various activities and initiatives, as
-          well as taking part in many school-organized activities.
-        </p>
+      <div className="aboutText">
+        <h1>About Myself</h1>
+        <br></br>
+        <p>My Name is Daren Nathaniel Janto</p>
       </div>
     </div>
   );
@@ -110,6 +118,30 @@ function Project() {
   return (
     <div className="project">
       <h1>To be continued..</h1>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <div className="footer" class="fixed-bottom">
+      <ul class="icon-effect icon-effect-1a">
+        <li>
+          <a href="https://www.instagram.com/darenathaniel/">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/daren-nathaniel-janto-30b7881b6/">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/darennathaniel">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }
