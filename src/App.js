@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import logo from "./logo.svg";
 import Button from "@material-ui/core/Button";
-import Container from "@material-ui/core/Container";
 
 function App() {
   return (
@@ -41,7 +40,12 @@ function App() {
             class="navbar navbar-expand-lg bg-dark fixed-top"
           >
             <div className="nav-content">
-              <img src={logo} className="nav-logo" alt="Logo." />
+              <img
+                src={logo}
+                className="nav-logo"
+                alt="Logo."
+                class="d-none d-sm-block d-md-none"
+              />
               <Link className="links" to="/">
                 <Button variant="outlined" color="primary">
                   Home
@@ -86,11 +90,16 @@ function Home() {
           className="line"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Line_segment.svg/375px-Line_segment.svg.png"
         ></img>
-        <p>"I thank my God upon every rememberance of You."</p>
-        <p>-Philippians 1:3</p>
+        <p className="BibleVerse">
+          "I thank my God upon every rememberance of You." Philippians 1:3
+        </p>
       </div>
       <div className="headAnimation">
-        <img width="450px" src="https://www.ainotes.org/svg/question.svg"></img>
+        <img
+          className="headPhoto"
+          width="450px"
+          src="https://www.ainotes.org/svg/question.svg"
+        ></img>
       </div>
     </div>
   );
@@ -108,7 +117,7 @@ function About() {
       <div className="aboutText">
         <h1>About Myself</h1>
         <img
-          className="line"
+          className="line2"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Line_segment.svg/375px-Line_segment.svg.png"
         ></img>
         <p className="aboutBio">
