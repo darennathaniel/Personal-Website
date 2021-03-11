@@ -140,17 +140,20 @@ function Footer() {
     <div className="footer" class="fixed-bottom">
       <ul class="icon-effect icon-effect-1a">
         <li>
-          <a href="https://www.instagram.com/darenathaniel/">
+          <a target="_blank" href="https://www.instagram.com/darenathaniel/">
             <i class="fa fa-instagram"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/daren-nathaniel-janto-30b7881b6/">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/daren-nathaniel-janto-30b7881b6/"
+          >
             <i class="fa fa-linkedin"></i>
           </a>
         </li>
         <li>
-          <a href="https://github.com/darennathaniel">
+          <a target="_blank" href="https://github.com/darennathaniel">
             <i class="fa fa-github"></i>
           </a>
         </li>
