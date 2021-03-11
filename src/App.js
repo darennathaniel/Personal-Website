@@ -111,7 +111,17 @@ function About() {
           className="line"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Line_segment.svg/375px-Line_segment.svg.png"
         ></img>
-        <p>My Name is Daren Nathaniel Janto</p>
+        <p className="aboutBio">
+          Hi! My name is Daren Nathaniel Janto. Nice meeting you! I am currently
+          studying in Nanyang Technological University with a major in Computer
+          Science.
+        </p>
+        <br></br>
+        <p className="aboutBio">
+          I have a passion of creating something that can benefit the public. My
+          main goal in life is to bring happiness and joy to everyone around me
+          as that is where my happiness is born!
+        </p>
       </div>
     </div>
   );

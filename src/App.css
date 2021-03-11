@@ -174,11 +174,12 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  /* border: 1px solid #ffffff;
-  border-radius: 10px;
-  background-color: #f0ffff;
-  box-shadow: -2px 2px 3px 3px #313131;
-  padding: 40px; */
+  align-items: center;
+}
+.aboutBio {
+  position: relative;
+  display: flex;
+  width: 430px;
 }
 .aboutList {
   text-align: left;
