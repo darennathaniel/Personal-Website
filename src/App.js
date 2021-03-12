@@ -3,6 +3,14 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import logo from "./logo.svg";
 import Button from "@material-ui/core/Button";
+import { withStyles } from "@material-ui/core/styles";
+
+const ColorButton = withStyles((theme) => ({
+  root: {
+    fontWeight: 800,
+    fontFamily: "Quicksand,sans-serif",
+  },
+}))(Button);
 
 function App() {
   return (
@@ -34,32 +42,23 @@ function App() {
         <Router>
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-          <nav
-            className="nav"
-            id="navbar"
-            class="navbar navbar-expand-lg bg-dark fixed-top"
-          >
+          <nav className="nav" class="bg-dark">
             <div className="nav-content">
-              <img
-                src={logo}
-                className="nav-logo"
-                alt="Logo."
-                class="d-none d-sm-block d-md-none"
-              />
+              <img src={logo} className="nav-logo" alt="Logo." />
               <Link className="links" to="/">
-                <Button variant="outlined" color="primary">
+                <ColorButton variant="outlined" color="primary">
                   Home
-                </Button>
+                </ColorButton>
               </Link>
               <Link className="links" to="/about">
-                <Button variant="outlined" color="primary">
+                <ColorButton variant="outlined" color="primary">
                   About
-                </Button>
+                </ColorButton>
               </Link>
               <Link className="links" to="/project">
-                <Button variant="outlined" color="primary">
+                <ColorButton variant="outlined" color="primary">
                   Project
-                </Button>
+                </ColorButton>
               </Link>
             </div>
           </nav>
