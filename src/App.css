@@ -136,10 +136,6 @@
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
 }
-.headAnimation {
-  -webkit-animation: mover 1s infinite alternate;
-  animation: mover 1s infinite alternate;
-}
 @-webkit-keyframes mover {
   0% {
     transform: translateY(0);
@@ -181,7 +177,6 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  align-items: center;
 }
 .aboutBio {
   position: relative;
@@ -191,6 +186,63 @@
 .aboutList {
   text-align: left;
   font-size: 25px;
+}
+.education {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  flex-direction: row;
+  margin-top: -80px;
+  height: 650px;
+}
+.penaburphoto {
+  width: 130px;
+}
+.ntuphoto {
+  width: 200px;
+}
+.ntupenabur {
+  flex-direction: column;
+  text-align: left;
+  margin-right: 0px;
+}
+.educationBody {
+  display: flex;
+  flex-direction: column;
+}
+.educationAnimate {
+  margin-left: 50px;
+  align-self: center;
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+.educationAnimation {
+  width: 500px;
+}
+.educationSchool {
+  display: flex;
+  flex-direction: column;
+}
+.educationText {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.educationUni {
+  display: flex;
+  flex-direction: row;
+  margin: 60px;
+}
+.educationHS {
+  display: flex;
+  flex-direction: row;
+  margin: 60px;
+}
+.schoolTitle {
+  display: flex;
+  font-style: italic;
 }
 .project {
   display: flex;
@@ -203,13 +255,10 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-
 ​ .selector-for-some-widget {
   box-sizing: content-box;
 }
-
 ul {
-  list-style: none;
   display: flex;
   justify-content: center;
 }
@@ -252,12 +301,28 @@ ul > li {
     font-size: 20px;
   }
   .aboutBio {
+    align-items: center;
     width: 330px;
   }
-  .line2 {
-    margin-top: -130px;
-    margin-bottom: -130px;
-    width: 90%;
+  .aboutText {
+    align-items: center;
+  }
+  .education {
+    margin-top: 100px;
+    flex-direction: column;
+  }
+  .educationHS {
+    margin-top: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .educationUni {
+    margin-top: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .educationAnimation {
+    width: 0px;
   }
 }
 @media screen and (min-width: 760px) and (max-width: 850px) {
@@ -284,6 +349,9 @@ ul > li {
     width: 300px;
     height: 300px;
   }
+  .educationAnimation {
+    width: 0px;
+  }
 }
 @media screen and (min-width: 860px) and (max-width: 1050px) {
   .head {
@@ -299,5 +367,8 @@ ul > li {
   }
   .aboutBio {
     font-size: 25px;
+  }
+  .educationAnimation {
+    width: 0px;
   }
 }
