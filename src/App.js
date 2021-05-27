@@ -155,8 +155,11 @@ function Education() {
         <div className="educationHS container-fluid justify-content-center">
           <div>
             <img
-              src="https://freepikpsd.com/wp-content/uploads/2019/10/logo-penabur-png-1-Transparent-Images.png"
+              src="https://rec-data.kalibrr.com/www.kalibrr.com/logos/JZ7Z8L7ZEDQHJ6HX59NSETJNBMA786BSHTDUJK86-5d8862f3.png"
               className="penaburphoto"
+              style={{
+                marginBottom: "-50px",
+              }}
             ></img>
           </div>
           <div className="educationText">
