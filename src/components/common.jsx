@@ -12,6 +12,7 @@ const fade = keyframes`
 export const Container = styled.div`
   background-color: #f0ffff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -27,10 +28,18 @@ export const Text = styled.p`
   @media screen and (max-width: 768px) {
     font-size: 16px;
   }
-  text-align: center;
 `;
 
 export const Line = styled.img`
   margin-top: -20vh;
   margin-bottom: -18vh;
+  @media screen and (max-width: 768px) {
+    width: 270px;
+    margin-top: -19vh;
+    margin-bottom: -16vh;
+  }
+  @media screen and (max-width: 375px) {
+    margin-top: -19vh;
+    margin-bottom: -17vh;
+  }
 `;

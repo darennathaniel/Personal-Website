@@ -17,6 +17,7 @@ export default function Scripts() {
         src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
         crossorigin
       ></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"

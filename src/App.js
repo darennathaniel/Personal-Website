@@ -3,6 +3,9 @@ import Navigation from "./components/navbar";
 import Footer from "./components/footer";
 import Scripts from "./scripts";
 import { BrowserRouter } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 export default function App() {
   return (
