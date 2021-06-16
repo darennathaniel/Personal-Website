@@ -1,17 +1,17 @@
 import React from "react";
-import { Text, Line } from "../common";
-import { HomeContainer, TextContainer, Image } from "./Style";
+import { Line } from "../common";
+import { HomeContainer, TextContainer, Image, HomeText } from "./Style";
 import "./index.css";
 
 export default function Home(props) {
   return (
     <HomeContainer>
       <TextContainer>
-        <Text>Hi! Welcome to my website.</Text>
+        <HomeText>Hi! Welcome to my website.</HomeText>
         <Line src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Line_segment.svg/375px-Line_segment.svg.png"></Line>
-        <Text>
+        <HomeText>
           "I thank my God upon every rememberance of You." -Phillipians 1:3
-        </Text>
+        </HomeText>
       </TextContainer>
       <Image
         src="https://www.ainotes.org/svg/question.svg"

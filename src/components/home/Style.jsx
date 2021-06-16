@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container } from "../common";
+import { Container, Text } from "../common";
 
 export const HomeContainer = styled(Container)`
   justify-content: space-evenly;
@@ -22,4 +22,8 @@ export const Image = styled.img`
     width: 330px;
     margin-bottom: 100px;
   }
+`;
+
+export const HomeText = styled(Text)`
+  text-align: center;
 `;
