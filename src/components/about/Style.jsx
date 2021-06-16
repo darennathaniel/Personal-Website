@@ -63,8 +63,8 @@ export const EduLine = styled(Line)`
   margin-top: -10vh;
   margin-bottom: -10vh;
   @media screen and (max-width: 768px) {
-    margin-top: -13vh;
-    margin-bottom: -13vh;
+    margin-top: -11vh;
+    margin-bottom: -11vh;
   }
 `;
 

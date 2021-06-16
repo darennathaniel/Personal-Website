@@ -35,8 +35,8 @@ export const Line = styled.img`
   margin-bottom: -18vh;
   @media screen and (max-width: 768px) {
     width: 270px;
-    margin-top: -19vh;
-    margin-bottom: -16vh;
+    margin-top: -17vh;
+    margin-bottom: -15vh;
   }
   @media screen and (max-width: 375px) {
     margin-top: -19vh;
