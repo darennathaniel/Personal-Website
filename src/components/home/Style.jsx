@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container, Text } from "../common";
+import { Container, Text, Line } from "../common";
 
 export const HomeContainer = styled(Container)`
   justify-content: space-evenly;
@@ -31,4 +31,11 @@ export const HomeTitle = styled(Text)`
 
 export const HomeText = styled(Text)`
   text-align: center;
+`;
+
+export const HomeLine = styled(Line)`
+  @media screen and (min-height: 800px) {
+    margin-top: -16vh;
+    margin-bottom: -14vh;
+  }
 `;

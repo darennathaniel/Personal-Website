@@ -3,12 +3,16 @@ import { Container, Text, Line } from "../common";
 
 export const BackgroundColor = styled.div`
   background-color: #f0ffff;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 `;
 
 export const BioContainer = styled(Container)`
   justify-content: space-evenly;
   flex-direction: row;
   height: 100vh;
+  scroll-snap-align: start;
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
@@ -66,6 +70,10 @@ export const EduLine = styled(Line)`
     margin-top: -11vh;
     margin-bottom: -11vh;
   }
+  @media screen and (max-height: 668px) {
+    margin-top: -14vh;
+    margin-bottom: -14vh;
+  }
 `;
 
 export const EduImage = styled.img`
@@ -76,13 +84,14 @@ export const EduImage = styled.img`
 `;
 
 export const EduContainer = styled(Container)`
-  height: 80vh;
+  height: 100vh;
   margin-top: -100px;
   flex-direction: row;
+  scroll-snap-align: start;
   @media screen and (max-width: 768px) {
     margin-top: 0px;
     flex-direction: column;
-    height: 100vh;
+    height: 135vh;
   }
   justify-content: space-evenly;
 `;
@@ -108,6 +117,9 @@ export const PenaburLogo = styled.img`
   height: 150px;
   @media screen and (max-width: 768px) {
     margin-top: 50px;
+  }
+  @media screen and (max-height: 668px) {
+    margin-top: 30px;
   }
 `;
 
