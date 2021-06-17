@@ -109,17 +109,17 @@ export const SubContainer = styled(Container)`
 export const NTULogo = styled.img`
   width: 255px;
   @media screen and (max-width: 768px) {
-    margin-top: 50px;
+    margin-top: 3vh;
   }
 `;
 
 export const PenaburLogo = styled.img`
   height: 150px;
   @media screen and (max-width: 768px) {
-    margin-top: 50px;
+    margin-top: 0vh;
   }
   @media screen and (max-height: 668px) {
-    margin-top: 30px;
+    margin-top: -3vh;
   }
 `;
 
