@@ -24,6 +24,11 @@ export const Image = styled.img`
   }
 `;
 
+export const HomeTitle = styled(Text)`
+  text-align: center;
+  font-size: 25px;
+`;
+
 export const HomeText = styled(Text)`
   text-align: center;
 `;
